@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #7feb29, #b3f9ee); /* Light lime to vibrant green */
+    display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;
+}
+
+.logo {
+  width: 60px; /* Set the width to fit your logo */
+  height: 60px; /* Ensure the height is equal to the width for a perfect circle */
+  margin-bottom: 4px; /* Spacing between the logo and the form */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; /* Makes the logo circular */
+  box-shadow: 0px 4px 10px rgba(0, 0, 139, 0.6); /* Dark blue box-shadow */
+}
+
+
+
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #8bc34a, #f0f4c3); /* Vibrant gradient */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Highlighted shadow */
+    border-radius: 15px; /* Sleek rounded corners */
+    padding: 30px 40px; /* Space inside the form */
+    margin: 60px auto; /* Increased top and bottom margin */
+    max-height: 700px; /* Slightly taller height */
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Ensure it adjusts based on content */
+}
+
+
+
+
+
+.screen {
+    background: linear-gradient(90deg, #8bc34a, #aed581); /* Vibrant green to soft green gradient */
+    position: relative;
+    height: 600px;
+    width: 360px;
+    /*box-shadow: 0px 0px 24px rgba(139, 195, 74, 0.6); /* Subtle green shadow */
+    /*box-shadow: 0px 0px 24px rgba(76, 175, 80, 0.7); */
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.screen__content {
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.screen__background__shape1 {
+    height: 520px;
+    width: 520px;
+    background: #ffffff; /* Pure white for contrast */
+    top: -50px;
+    right: 120px;
+    border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+    height: 220px;
+    width: 220px;
+    background: #f0f4c3; /* Light lime */
+    top: -172px;
+    right: 0;
+    border-radius: 32px;
+}
+
+.screen__background__shape3 {
+    height: 540px;
+    width: 190px;
+    background: linear-gradient(270deg, #8bc34a, #aed581); /* Smooth green gradient */
+    top: -24px;
+    right: 0;
+    border-radius: 32px;
+}
+
+.screen__background__shape4 {
+    height: 400px;
+    width: 200px;
+    background: #dcedc8; /* Soft greenish lime */
+    top: 420px;
+    right: 50px;
+    border-radius: 60px;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #558b2f; /* Dark green for emphasis */
+}
+
+.dark-text {
+    color: #4b7a04; /* Dark lime-green */
+}
+
+.light-text {
+    color: #4b7a04; /* Softer lime shade */
+}
+
+.login {
+    width: 320px;
+    padding: 30px;
+    padding-top: 156px;
+}
+
+.login__field {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.login__icon {
+    position: absolute;
+    top: 30px;
+    color: #558b2f; /* Medium green for icons */
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #dcedc8; /* Subtle lime-green underline */
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 75%;
+    transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+    outline: none;
+    border-bottom-color: #8bc34a; /* Vibrant green focus */
+}
+
+.login__submit {
+    background: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #c5e1a5; /* Subtle green border */
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #558b2f; /* Medium green for button text */
+    box-shadow: 0px 2px 2px rgba(139, 195, 74, 0.4);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+    border-color: #8bc34a;
+    outline: none;
+    background: #f0f4c3; /* Light lime hover effect */
+}
+
+.button__icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: #8bc34a; /* Vibrant green for icons */
+}
